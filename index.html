@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Fullscreen Image</title>
+  <style>
+    /* Eliminar el margen y padding de la página */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* El contenedor principal ocupa el 100% de la pantalla */
+    .full-screen-image {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* La imagen se adapta al tamaño del contenedor manteniendo su proporción */
+    .full-screen-image img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="full-screen-image">
+    <!-- Cambia la URL de la imagen a la que desees utilizar -->
+    <img src="halloween.webp" alt="Imagen a pantalla completa">
+  </div>
+</body>
+</html>
